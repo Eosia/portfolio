@@ -1,19 +1,67 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {# Run `composer require symfony/webpack-encore-bundle`
-           and uncomment the following Encore helpers to start using Symfony UX #}
-        {% block stylesheets %}
-            {#{{ encore_entry_link_tags('app') }}#}
-        {% endblock %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Eosia Web Developer | Portfolio{% endblock %}</title>
 
-        {% block javascripts %}
-            {#{{ encore_entry_script_tags('app') }}#}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+    <!--META start-->
+    {% include ('incs/head/meta.html.twig') %}
+    <!--META stop-->
+
+    <!--favicon start-->
+    {% include ('incs/head/favicon.html.twig') %}
+    <!--favicon stop-->
+
+    <!--analytics start-->
+    {% include ('incs/head/analytics.html.twig') %}
+    <!--analytics stop-->
+
+    <!--style start-->
+    {% include ('incs/head/style.html.twig') %}
+    <!--style stop-->
+
+    <!--cookie start-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <!--cookie stop-->
+
+</head>
+
+<body>
+
+{% include ('incs/header.html.twig') %}
+
+<main class="container-fluid mx-0 mt-5">
+    {% block body %}
+
+
+
+    {% endblock %}
+</main>
+
+<!-- import du footer -->
+{% include ('incs/footer.html.twig')%}
+
+<!--cookie consent-->
+<!--cookie-->
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+    window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+                "background": "#000"
+            },
+            "button": {
+                "background": "#C4B280"
+            }
+        },
+        "position": "bottom-left",
+        "content": {
+            "message": "Nous utilisons des cookies à des fins techniques pour enrichir les fonctionnalités de notre site.",
+            "dismiss": "J'accepte !"
+        }
+    });
+</script>
+
+</body>
 </html>
