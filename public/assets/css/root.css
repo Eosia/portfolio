@@ -1,4 +1,233 @@
+@charset "UTF-8";
 /* root.scss */
 /* imports des modules scss -imports des css de toutes les pages du site- */
+/*app.scss*/
+/* breakpoints bootstrap -taille d'écran- */
+/*
+// Extra large devices (large desktops, 1200px and up)
+@media screen and  (min-width: 1200px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media screen and (min-width: 992px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media screen and (min-width: 768px) {
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media screen and (min-width: 576px) {
+
+}
+
+// Small devices (portrait phones, 300px and up)
+@media screen and (max-width: 575.98px) {
+
+}
+*/
+/* app.scss fichier de surcharge */
+html, body {
+  padding: 0 !important;
+  margin: 0 auto !important;
+  box-sizing: border-box;
+  max-width: 100% !important;
+  height: 100% !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  min-height: 80vh !important;
+}
+
+/*cache des elements*/
+.hidden {
+  display: none;
+}
+
+/*edge font*/
+@font-face {
+  font-family: "edge";
+  src: url("../fonts/edge.ttf") format("ttf");
+}
+/*varino font*/
+@font-face {
+  font-family: "varino";
+  src: url("../fonts/Varino-Normal.ttf") format("ttf");
+}
+/*variables des polices*/
+/*edge*/
+/*varino*/
+.font1 {
+  font-family: "varino";
+}
+
+.font2 {
+  font-family: "edge";
+}
+
+.font3 {
+  font-family: "Berlin Sans FB";
+}
+
+.color1 {
+  color: #c4b280;
+}
+
+.text-xl {
+  font-family: "Berlin Sans FB";
+}
+@media (min-width: 1200px) {
+  .text-xl {
+    font-size: 3.2rem !important;
+    letter-spacing: 0.4rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .text-xl {
+    font-size: 2.6rem !important;
+    letter-spacing: 0.3rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .text-xl {
+    font-size: 2.2rem !important;
+    letter-spacing: 0.4rem !important;
+  }
+}
+@media (min-width: 576px) {
+  .text-xl {
+    font-size: 2.4rem !important;
+    letter-spacing: 0.4rem !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .text-xl {
+    font-size: 1.8rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+}
+
+/*accueil.scss*/
+.section-accueil .img-avatar {
+  border: 1px ridge #c4b280;
+}
+@media (max-width: 767px) {
+  .section-accueil .accueil-child-1-item-right {
+    margin-top: 7vh;
+  }
+}
+
+/*footer.scss*/
+footer {
+  background-color: #000;
+}
+footer .container-footer p {
+  color: #c4b280;
+}
+
+/*header.scss*/
+header {
+  background-color: #000;
+  border-bottom: 5px solid #c4b280;
+}
+header h1, header h2 {
+  color: #c4b280;
+}
+@media (min-width: 1200px) {
+  header h1 {
+    font-size: 4.6rem !important;
+    letter-spacing: 0.4rem !important;
+  }
+}
+@media (max-width: 1199px) {
+  header h1 {
+    font-size: 3rem !important;
+    letter-spacing: 0.6rem;
+  }
+}
+@media (max-width: 992px) {
+  header h1 {
+    font-size: 2.4rem !important;
+    letter-spacing: 0.4rem;
+  }
+}
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem !important;
+    letter-spacing: 0.2rem;
+  }
+}
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 2.2rem !important;
+    letter-spacing: 0.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header h2 {
+    font-size: 2.1rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+}
+@media (max-width: 1199px) {
+  header h2 {
+    font-size: 1.4rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+}
+@media (max-width: 992px) {
+  header h2 {
+    font-size: 1.8rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
+@media (max-width: 768px) {
+  header h2 {
+    font-size: 1.6rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+}
+@media (max-width: 576px) {
+  header h2 {
+    font-size: 1.4rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
+
+/*nav.scss*/
+nav {
+  background-color: #000;
+  border-bottom: 3px solid #c4b280;
+  /*navbar-nav*/
+}
+nav .navbar-nav {
+  /*link admin en rouge*/
+  /*link admin disable en blanc*/
+}
+nav .navbar-nav li {
+  font-family: "Berlin Sans FB";
+  letter-spacing: 0.2rem;
+}
+nav .navbar-nav li a {
+  color: #c4b280 !important;
+}
+nav .navbar-nav .link-admin {
+  color: red !important;
+}
+nav .navbar-nav .link-disable {
+  color: #fff !important;
+}
+
+/*social.scss*/
+.section-social {
+  background-color: #000;
+}
 
 /*# sourceMappingURL=root.css.map */

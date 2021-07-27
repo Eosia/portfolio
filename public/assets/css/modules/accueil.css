@@ -1,3 +1,11 @@
-
+/*accueil.scss*/
+.section-accueil .img-avatar {
+  border: 1px ridge #c4b280;
+}
+@media (max-width: 767px) {
+  .section-accueil .accueil-child-1-item-right {
+    margin-top: 7vh;
+  }
+}
 
 /*# sourceMappingURL=accueil.css.map */

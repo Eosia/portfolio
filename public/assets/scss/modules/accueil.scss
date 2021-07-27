@@ -1,0 +1,20 @@
+/*accueil.scss*/
+
+.section-accueil {
+
+
+  .img-avatar {
+    border: 1px ridge #c4b280;
+  }
+
+  .accueil-child-1-item-right {
+
+    // Medium devices (tablets, 768px and up)
+    @media (max-width: 767px) {
+      margin-top: 7vh;
+    }
+
+  }
+
+
+}

@@ -1,3 +1,115 @@
+@charset "UTF-8";
+/*app.scss*/
+/* breakpoints bootstrap -taille d'écran- */
+/*
+// Extra large devices (large desktops, 1200px and up)
+@media screen and  (min-width: 1200px) {
 
+}
+
+// Large devices (desktops, 992px and up)
+@media screen and (min-width: 992px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media screen and (min-width: 768px) {
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media screen and (min-width: 576px) {
+
+}
+
+// Small devices (portrait phones, 300px and up)
+@media screen and (max-width: 575.98px) {
+
+}
+*/
+/* app.scss fichier de surcharge */
+html, body {
+  padding: 0 !important;
+  margin: 0 auto !important;
+  box-sizing: border-box;
+  max-width: 100% !important;
+  height: 100% !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  min-height: 80vh !important;
+}
+
+/*cache des elements*/
+.hidden {
+  display: none;
+}
+
+/*edge font*/
+@font-face {
+  font-family: "edge";
+  src: url("../fonts/edge.ttf") format("ttf");
+}
+/*varino font*/
+@font-face {
+  font-family: "varino";
+  src: url("../fonts/Varino-Normal.ttf") format("ttf");
+}
+/*variables des polices*/
+/*edge*/
+/*varino*/
+.font1 {
+  font-family: "varino";
+}
+
+.font2 {
+  font-family: "edge";
+}
+
+.font3 {
+  font-family: "Berlin Sans FB";
+}
+
+.color1 {
+  color: #c4b280;
+}
+
+.text-xl {
+  font-family: "Berlin Sans FB";
+}
+@media (min-width: 1200px) {
+  .text-xl {
+    font-size: 3.2rem !important;
+    letter-spacing: 0.4rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .text-xl {
+    font-size: 2.6rem !important;
+    letter-spacing: 0.3rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .text-xl {
+    font-size: 2.2rem !important;
+    letter-spacing: 0.4rem !important;
+  }
+}
+@media (min-width: 576px) {
+  .text-xl {
+    font-size: 2.4rem !important;
+    letter-spacing: 0.4rem !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .text-xl {
+    font-size: 1.8rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */

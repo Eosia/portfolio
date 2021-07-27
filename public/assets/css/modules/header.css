@@ -1,3 +1,70 @@
-
+/*header.scss*/
+header {
+  background-color: #000;
+  border-bottom: 5px solid #c4b280;
+}
+header h1, header h2 {
+  color: #c4b280;
+}
+@media (min-width: 1200px) {
+  header h1 {
+    font-size: 4.6rem !important;
+    letter-spacing: 0.4rem !important;
+  }
+}
+@media (max-width: 1199px) {
+  header h1 {
+    font-size: 3rem !important;
+    letter-spacing: 0.6rem;
+  }
+}
+@media (max-width: 992px) {
+  header h1 {
+    font-size: 2.4rem !important;
+    letter-spacing: 0.4rem;
+  }
+}
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem !important;
+    letter-spacing: 0.2rem;
+  }
+}
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 2.2rem !important;
+    letter-spacing: 0.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header h2 {
+    font-size: 2.1rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+}
+@media (max-width: 1199px) {
+  header h2 {
+    font-size: 1.4rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+}
+@media (max-width: 992px) {
+  header h2 {
+    font-size: 1.8rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
+@media (max-width: 768px) {
+  header h2 {
+    font-size: 1.6rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+}
+@media (max-width: 576px) {
+  header h2 {
+    font-size: 1.4rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
 
 /*# sourceMappingURL=header.css.map */

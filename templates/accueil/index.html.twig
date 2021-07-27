@@ -7,6 +7,100 @@
 {% block body %}
 
 
+    <!--section page accueil start-->
+
+    <section class="section-accueil container-fluid mt-3">
+
+        <!--bloc 1 start-->
+        <div class="accueil-child-1 container-fluid">
+
+           <div class="row">
+
+               <!--bloc gauche-->
+               <div class="accueil-child-1-item-left col-12 col-sm-12 col-md-8 col-lg-7 col-xl-5 d-flex flex-column justify-content-center align-items-center mx-auto">
+                   <p class="text-left mx-auto d-flex flex-column justify-content-center align-items-center text-uppercase text-xl">
+                       Bienvenue !
+                   </p>
+
+
+                   <p class="text-left mx-auto d-flex flex-column justify-content-center align-items-center mt-3 h4">
+                       Je suis <span class="text-iam display-5 mt-4"></span>
+                   </p>
+
+                   <script>var typed = new Typed('.text-iam', {
+                           strings: ["WEB DEVELOPPEUR JUNIOR", "PENTESTER AUTODIDACTE", "AMATEUR D'ADMINSYS"],
+                           typeSpeed: 60,
+                           backSpeed: 30,
+                           loop: true,
+                       });
+                   </script>
+               </div>
+
+               <!--bloc droit-->
+               <div class="accueil-child-1-item-right col-8 col-sm-6 col-md-4 col-lg-4 col-xl-3 mx-auto d-flex flex-column justify-content-center align-items-center">
+                   <div class="mx-auto justify-content-center align-items-center">
+                       <figure class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto text-center">
+                           <img src="{{ asset('assets/img/avatar.png') }}" alt="avatar eosia" loading="lazy"
+                                aria-label="avatar eosia" class="img-fluid img-avatar rounded-circle">
+
+                           <figcaption class="hidden">
+                               Remo Cavaliere
+                           </figcaption>
+                       </figure>
+                   </div>
+               </div>
+
+           </div>
+
+        </div>
+        <!--bloc 1 end-->
+
+        <!--bloc 2 bio start-->
+        <div class="accueil-child-2 container-fluid mt-5">
+
+            <div class="accueil-child-2-item">
+
+                <p>
+                    Auparavant pâtissier pendant 15 ans, j'ai décidé de me lancer le défi d'une nouvelle carrière dans le milieu du web.
+                </p>
+
+            </div>
+
+        </div>
+        <!--bloc 2 end-->
+
+        <!--bloc 3 start-->
+        <div class="accueil-child-3 container-fluid">
+
+            <div class="accueil-child-3-item">
+
+                <p>
+                    J'ai d'abord commencé à me forder aux bases du pentesting via des plateformes comme Udemy ou Alphorm,
+                    ce qui m'a permis d'évoluer en autodidacte pour acquérir de solides bases.
+                </p>
+
+                <p>
+                    Ensuite, j'ai complété cet apprentissage par une année en web designer à l'ipeps de Fléron puis un bachelier de web développeur à
+                    l'ipeps de Seraing.
+                </p>
+
+                <p>
+                    Lors de mon cursus orienté backend, j'ai eu l'occasion de travailler avec des frameworks tel que Angular ou Symfony, ce qui m'a
+                    donné une facilité à travailler tant coté frontend que backend.
+                </p>
+
+                <p>
+                    Mon affinité va cependant vers Symfony avec lequel je travaille principalement pour mes projets.
+                </p>
+
+            </div>
+
+        </div>
+        <!--bloc 3 end-->
+
+    </section>
+
+    <!--section page accueil stop-->
 
 
 {% endblock %}

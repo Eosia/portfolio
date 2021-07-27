@@ -1,3 +1,9 @@
-
+/*footer.scss*/
+footer {
+  background-color: #000;
+}
+footer .container-footer p {
+  color: #c4b280;
+}
 
 /*# sourceMappingURL=footer.css.map */
