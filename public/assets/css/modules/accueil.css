@@ -1,11 +1,17 @@
-/*accueil.scss*/
-.section-accueil .img-avatar {
-  border: 1px ridge #c4b280;
-}
-@media (max-width: 767px) {
-  .section-accueil .accueil-child-1-item-right {
-    margin-top: 7vh;
-  }
-}
+/* Error: Undefined variable.
+ *    ,
+ * 29 |       font-family: $font1;
+ *    |                    ^^^^^^
+ *    '
+ *   scss\modules\accueil.scss 29:20  root stylesheet */
 
-/*# sourceMappingURL=accueil.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 29 \2502        font-family: $font1;\d\a    \2502                     ^^^^^^\a    \2575 \a   scss\\modules\\accueil.scss 29:20  root stylesheet";
+}

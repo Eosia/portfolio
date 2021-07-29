@@ -9,7 +9,7 @@
 
     <!--section page accueil start-->
 
-    <section class="section-accueil container-fluid mt-3">
+    <section class="section-accueil container-fluid mx-0 mt-3">
 
         <!--bloc 1 start-->
         <div class="accueil-child-1 container-fluid">
@@ -44,7 +44,7 @@
                                 aria-label="avatar eosia" class="img-fluid img-avatar rounded-circle">
 
                            <figcaption class="hidden">
-                               Remo Cavaliere
+                               avatar eosia
                            </figcaption>
                        </figure>
                    </div>
@@ -56,51 +56,72 @@
         <!--bloc 1 end-->
 
         <!--bloc 2 bio start-->
-        <div class="accueil-child-2 container-fluid mt-5">
+        <div class="accueil-child-2 mt-5 mb-2">
 
-            <div class="accueil-child-2-item">
+            <div class="accueil-child-2-item text-l d-flex flex-column">
 
-                <p>
-                    Auparavant pâtissier pendant 15 ans, j'ai décidé de me lancer le défi d'une nouvelle carrière dans le milieu du web.
-                </p>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-3 d-flex justify-content-start align-items-center">
+                    <p class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-6 text-left">
+                        Auparavant pâtissier pendant 15 ans, j'ai décidé de me lancer le défi d'une nouvelle carrière dans le milieu du web.
+                    </p>
+                </div>
+
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-end align-items-center">
+                    <p class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-6 text-left">
+                        J'ai d'abord commencé à me forder aux bases du pentesting via des plateformes comme Udemy ou Alphorm,
+                        ce qui m'a permis d'évoluer en autodidacte pour acquérir de solides bases.
+                    </p>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-3 d-flex justify-content-start align-items-center">
+                    <p class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-6 text-left">
+                        Ensuite, j'ai complété cet apprentissage par une année en web designer à l'ipeps de Fléron puis un bachelier de web développeur à
+                        l'ipeps de Seraing.
+                    </p>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-end align-items-center">
+                    <p class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-6 text-left">
+                        Lors de mon cursus orienté backend, j'ai eu l'occasion de travailler avec des frameworks tel que Angular ou Symfony, ce qui m'a
+                        donné une facilité à travailler tant coté frontend que backend.
+                    </p>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-3 d-flex justify-content-start align-items-center">
+                    <p class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-6 text-left">
+                        Mon affinité va cependant vers Symfony avec lequel je travaille principalement pour mes projets.
+                    </p>
+                </div>
 
             </div>
 
         </div>
         <!--bloc 2 end-->
 
-        <!--bloc 3 start-->
-        <div class="accueil-child-3 container-fluid">
+        <div class="container-btn container-fluid">
 
-            <div class="accueil-child-3-item">
+            <div class="row">
 
-                <p>
-                    J'ai d'abord commencé à me forder aux bases du pentesting via des plateformes comme Udemy ou Alphorm,
-                    ce qui m'a permis d'évoluer en autodidacte pour acquérir de solides bases.
-                </p>
+                    <a class="col-12 col-sm-12 col-md-7 col-lg-5 col-xl-4 mx-auto text-uppercase btn text-l"
+                       href="{{ path('skills') }}" >
+                        Voir mes compétences
+                    </a>
 
-                <p>
-                    Ensuite, j'ai complété cet apprentissage par une année en web designer à l'ipeps de Fléron puis un bachelier de web développeur à
-                    l'ipeps de Seraing.
-                </p>
-
-                <p>
-                    Lors de mon cursus orienté backend, j'ai eu l'occasion de travailler avec des frameworks tel que Angular ou Symfony, ce qui m'a
-                    donné une facilité à travailler tant coté frontend que backend.
-                </p>
-
-                <p>
-                    Mon affinité va cependant vers Symfony avec lequel je travaille principalement pour mes projets.
-                </p>
+                    <a class="col-12 col-sm-12 col-md-7 col-lg-5 col-xl-4 text-uppercase mx-auto btn btn-portfolio text-l"
+                       href="{{ path('portfolio') }}" >
+                        Voir mon portfolio
+                    </a>
 
             </div>
 
         </div>
-        <!--bloc 3 end-->
+
 
     </section>
 
     <!--section page accueil stop-->
+
 
 
 {% endblock %}

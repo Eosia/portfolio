@@ -53,13 +53,15 @@ main {
 
 /*edge font*/
 @font-face {
-  font-family: "edge";
-  src: url("../fonts/edge.ttf") format("ttf");
+  font-family: "tourner";
+  src: url("../fonts/tourner.ttf");
+  font-display: auto;
 }
 /*varino font*/
 @font-face {
   font-family: "varino";
-  src: url("../fonts/Varino-Normal.ttf") format("ttf");
+  src: url("../fonts/varino.ttf");
+  font-display: auto;
 }
 /*variables des polices*/
 /*edge*/
@@ -69,11 +71,11 @@ main {
 }
 
 .font2 {
-  font-family: "edge";
+  font-family: "tourner";
 }
 
 .font3 {
-  font-family: "Berlin Sans FB";
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .color1 {
@@ -81,7 +83,7 @@ main {
 }
 
 .text-xl {
-  font-family: "Berlin Sans FB";
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 @media (min-width: 1200px) {
   .text-xl {
@@ -114,6 +116,40 @@ main {
   }
 }
 
+.text-l {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+@media (min-width: 1200px) {
+  .text-l {
+    font-size: 1.4rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .text-l {
+    font-size: 1.2rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .text-l {
+    font-size: 1rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
+@media (min-width: 576px) {
+  .text-l {
+    font-size: 1.2rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .text-l {
+    font-size: 1rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
+
 /*accueil.scss*/
 .section-accueil .img-avatar {
   border: 1px ridge #c4b280;
@@ -123,13 +159,106 @@ main {
     margin-top: 7vh;
   }
 }
+.section-accueil .container-btn {
+  margin-bottom: 10vh !important;
+}
+.section-accueil .container-btn .btn {
+  border: 5px solid #c4b280;
+  color: #c4b280;
+  background-color: #000;
+  padding: 10px 5px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-family: "varino";
+  letter-spacing: 0.2rem;
+}
+.section-accueil .container-btn .btn:hover {
+  border: 5px outset #000;
+  color: #000;
+  background-color: #c4b280;
+}
+.section-accueil .container-btn .btn:after {
+  border: 5px solid #c4b280;
+  color: #c4b280;
+  background-color: #000;
+}
+@media (min-width: 1200px) {
+  .section-accueil .container-btn .btn {
+    font-size: 1.4rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .section-accueil .container-btn .btn {
+    font-size: 1.2rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .section-accueil .container-btn .btn {
+    font-size: 1rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+}
+@media (min-width: 576px) {
+  .section-accueil .container-btn .btn {
+    font-size: 1rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .section-accueil .container-btn .btn {
+    font-size: 0.8rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .section-accueil .container-btn {
+    margin-top: 7vh;
+  }
+}
+@media (max-width: 992px) {
+  .section-accueil .btn-portfolio {
+    margin-top: 3vh;
+  }
+}
 
 /*footer.scss*/
 footer {
   background-color: #000;
 }
-footer .container-footer p {
+footer .text-footer {
   color: #c4b280;
+}
+@media (min-width: 1200px) {
+  footer .text-footer {
+    font-size: 2rem !important;
+    letter-spacing: 0.3rem !important;
+  }
+}
+@media (min-width: 992px) {
+  footer .text-footer {
+    font-size: 1.8rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+}
+@media (min-width: 768px) {
+  footer .text-footer {
+    font-size: 1.6rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+}
+@media (min-width: 576px) {
+  footer .text-footer {
+    font-size: 1.4rem !important;
+    letter-spacing: 0.3rem !important;
+  }
+}
+@media (max-width: 575.98px) {
+  footer .text-footer {
+    font-size: 1rem !important;
+    letter-spacing: 0.1rem !important;
+  }
 }
 
 /*header.scss*/
@@ -140,35 +269,41 @@ header {
 header h1, header h2 {
   color: #c4b280;
 }
+header h1 {
+  font-family: "tourner" !important;
+}
 @media (min-width: 1200px) {
   header h1 {
-    font-size: 4.6rem !important;
-    letter-spacing: 0.4rem !important;
+    font-size: 8.6rem !important;
+    letter-spacing: 2rem !important;
   }
 }
 @media (max-width: 1199px) {
   header h1 {
-    font-size: 3rem !important;
-    letter-spacing: 0.6rem;
+    font-size: 7.6rem !important;
+    letter-spacing: 1.5rem !important;
   }
 }
 @media (max-width: 992px) {
   header h1 {
-    font-size: 2.4rem !important;
-    letter-spacing: 0.4rem;
+    font-size: 6.6rem !important;
+    letter-spacing: 1.5rem !important;
   }
 }
 @media (max-width: 768px) {
   header h1 {
-    font-size: 2rem !important;
-    letter-spacing: 0.2rem;
+    font-size: 5.6rem !important;
+    letter-spacing: 1.4rem !important;
   }
 }
 @media (max-width: 576px) {
   header h1 {
-    font-size: 2.2rem !important;
-    letter-spacing: 0.3rem;
+    font-size: 2.6rem !important;
+    letter-spacing: 0.6rem !important;
   }
+}
+header h2 {
+  font-family: "varino" !important;
 }
 @media (min-width: 1200px) {
   header h2 {
@@ -212,7 +347,7 @@ nav .navbar-nav {
   /*link admin disable en blanc*/
 }
 nav .navbar-nav li {
-  font-family: "Berlin Sans FB";
+  font-family: "Lucida Console", "Courier New", monospace;
   letter-spacing: 0.2rem;
 }
 nav .navbar-nav li a {

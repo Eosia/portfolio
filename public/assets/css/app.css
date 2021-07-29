@@ -51,13 +51,15 @@ main {
 
 /*edge font*/
 @font-face {
-  font-family: "edge";
-  src: url("../fonts/edge.ttf") format("ttf");
+  font-family: "tourner";
+  src: url("../fonts/tourner.ttf");
+  font-display: auto;
 }
 /*varino font*/
 @font-face {
   font-family: "varino";
-  src: url("../fonts/Varino-Normal.ttf") format("ttf");
+  src: url("../fonts/varino.ttf");
+  font-display: auto;
 }
 /*variables des polices*/
 /*edge*/
@@ -67,11 +69,11 @@ main {
 }
 
 .font2 {
-  font-family: "edge";
+  font-family: "tourner";
 }
 
 .font3 {
-  font-family: "Berlin Sans FB";
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .color1 {
@@ -79,7 +81,7 @@ main {
 }
 
 .text-xl {
-  font-family: "Berlin Sans FB";
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 @media (min-width: 1200px) {
   .text-xl {
@@ -109,6 +111,40 @@ main {
   .text-xl {
     font-size: 1.8rem !important;
     letter-spacing: 0.2rem !important;
+  }
+}
+
+.text-l {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+@media (min-width: 1200px) {
+  .text-l {
+    font-size: 1.4rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .text-l {
+    font-size: 1.2rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .text-l {
+    font-size: 1rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
+@media (min-width: 576px) {
+  .text-l {
+    font-size: 1.2rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .text-l {
+    font-size: 1rem !important;
+    letter-spacing: 0.1rem !important;
   }
 }
 
