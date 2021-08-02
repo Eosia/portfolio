@@ -162,7 +162,7 @@ main {
 .section-accueil .container-btn {
   margin-bottom: 10vh !important;
 }
-.section-accueil .container-btn .btn {
+.section-accueil .container-btn .btn-home {
   border: 5px solid #c4b280;
   color: #c4b280;
   background-color: #000;
@@ -172,42 +172,42 @@ main {
   font-family: "varino";
   letter-spacing: 0.2rem;
 }
-.section-accueil .container-btn .btn:hover {
+.section-accueil .container-btn .btn-home:hover {
   border: 5px outset #000;
   color: #000;
   background-color: #c4b280;
 }
-.section-accueil .container-btn .btn:after {
+.section-accueil .container-btn .btn-home:after {
   border: 5px solid #c4b280;
   color: #c4b280;
   background-color: #000;
 }
 @media (min-width: 1200px) {
-  .section-accueil .container-btn .btn {
+  .section-accueil .container-btn .btn-home {
     font-size: 1.4rem !important;
     letter-spacing: 0.2rem !important;
   }
 }
 @media (min-width: 992px) {
-  .section-accueil .container-btn .btn {
+  .section-accueil .container-btn .btn-home {
     font-size: 1.2rem !important;
     letter-spacing: 0.1rem !important;
   }
 }
 @media (min-width: 768px) {
-  .section-accueil .container-btn .btn {
+  .section-accueil .container-btn .btn-home {
     font-size: 1rem !important;
     letter-spacing: 0.2rem !important;
   }
 }
 @media (min-width: 576px) {
-  .section-accueil .container-btn .btn {
+  .section-accueil .container-btn .btn-home {
     font-size: 1rem !important;
     letter-spacing: 0.1rem !important;
   }
 }
 @media (max-width: 575.98px) {
-  .section-accueil .container-btn .btn {
+  .section-accueil .container-btn .btn-home {
     font-size: 0.8rem !important;
     letter-spacing: 0.1rem !important;
   }
@@ -221,6 +221,33 @@ main {
   .section-accueil .btn-portfolio {
     margin-top: 3vh;
   }
+}
+
+/*scss contact*/
+.btn-contact {
+  border: 5px solid #c4b280 !important;
+  color: #c4b280 !important;
+  background-color: #000 !important;
+  padding: 10px 30px !important;
+  border-radius: 10px !important;
+  font-weight: 700;
+  font-family: "varino";
+  letter-spacing: 0.4rem !important;
+}
+.btn-contact:hover {
+  border: 5px outset #000 !important;
+  color: #000 !important;
+  background-color: #c4b280 !important;
+}
+.btn-contact:after {
+  border: 5px solid #c4b280 !important;
+  color: #c4b280 !important;
+  background-color: #000 !important;
+}
+
+.form-control {
+  border: 1px solid #c4b280 !important;
+  box-shadow: 2px 2px 2px 2px #000 !important;
 }
 
 /*footer.scss*/
@@ -363,6 +390,116 @@ nav .navbar-nav .link-disable {
 /*social.scss*/
 .section-social {
   background-color: #000;
+}
+
+/*scss skills*/
+.card-skill {
+  background-color: #000 !important;
+  padding: 15px 5px;
+  border: 3px outset #c4b280 !important;
+  margin-bottom: 5vh;
+}
+.card-skill .progress-bar {
+  background-color: #c4b280;
+}
+
+@media (min-width: 1200px) {
+  .font-skills {
+    font-size: 1.4rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .font-skills {
+    font-size: 1.2rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .font-skills {
+    font-size: 1rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
+@media (min-width: 576px) {
+  .font-skills {
+    font-size: 1rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .font-skills {
+    font-size: 0.8rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
+
+/*scss portfolio*/
+.btn-site {
+  border: 3px solid #c4b280 !important;
+  color: #c4b280 !important;
+  background-color: #000 !important;
+  padding: 10px 5px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-family: "varino";
+  letter-spacing: 0.2rem;
+}
+.btn-site:hover {
+  border: 3px outset silver !important;
+  color: #000 !important;
+  background-color: #c4b280 !important;
+}
+.btn-site:after {
+  border: 5px solid #c4b280;
+  color: #c4b280 !important;
+  background-color: #000 !important;
+}
+
+@media (max-width: 992px) {
+  .btn-code {
+    margin-top: 3vh;
+  }
+}
+
+.card-portfolio {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+@media (min-width: 1600px) {
+  .card-portfolio {
+    font-size: 1.6rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  .card-portfolio {
+    font-size: 1.4rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .card-portfolio {
+    font-size: 1.2rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .card-portfolio {
+    font-size: 1.2rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
+@media (min-width: 576px) {
+  .card-portfolio {
+    font-size: 1.3rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .card-portfolio {
+    font-size: 1rem !important;
+    letter-spacing: 0.1rem !important;
+  }
 }
 
 /*# sourceMappingURL=root.css.map */

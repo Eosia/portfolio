@@ -26,7 +26,7 @@ class SiteCrudController extends AbstractCrudController
             /*image*/
             ImageField::new('image', 'IMAGE')->setUploadDir("public/assets/img")
                 ->setBasePath("assets/img")
-                ->setRequired(true),
+                ->setRequired(false),
 
             UrlField::new('url', 'Lien du site en ligne'),
 

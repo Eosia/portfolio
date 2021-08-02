@@ -2,11 +2,16 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use App\Repository\SkillRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
+use Doctrine\ORM\Mapping\OrderBy;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Entity(repositoryClass=SkillRepository::class)
+ * @UniqueEntity("nom")
  */
 class Skill
 {
@@ -37,6 +42,11 @@ class Skill
      * @ORM\JoinColumn(nullable=false)
      */
     private $categorie;
+
+    public function __toString()
+    {
+        return $this->getNom();
+    }
 
     public function getId(): ?int
     {

@@ -6,6 +6,8 @@ use App\Repository\CategorieRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
+use Doctrine\ORM\Mapping\OrderBy;
 
 /**
  * @ORM\Entity(repositoryClass=CategorieRepository::class)
@@ -26,8 +28,14 @@ class Categorie
 
     /**
      * @ORM\OneToMany(targetEntity=Skill::class, mappedBy="categorie")
+     * @OrderBy({"nom" = "ASC"})
      */
     private $skills;
+
+    public function __toString()
+    {
+        return $this->getNom();
+    }
 
     public function __construct()
     {

@@ -1,0 +1,79 @@
+
+<!--template email lors d'un nouveau contact sur le site-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact hello@eosia.dev</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+
+
+<main class="container-fluid">
+
+    <div class="row mx-auto text-center">
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin: auto; text-align: center;">
+            <h1 class="h2">
+                Message en provenance de votre site Eosia.dev
+            </h1>
+        </div>
+        <br><br>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-3" style="margin: auto; text-align: center;">
+            <h2 class="h3">
+                Résumé du nouveau message :
+            </h2>
+        </div>
+        <br><br>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin: auto; text-align: center;">
+            <p class="text-uppercase" style="font-size: 24px !important;">Nom et prénom du contact : <br><br>{{contact.nom }} {{contact.prenom }}</p>
+        </div>
+        <br><br>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-3" style="margin: auto; text-align: center;">
+            <p class="text-uppercase" style="font-size: 24px !important;">Email du contact : </p>
+            <br>
+            <a href="mailto:{{ contact.email }}" style="text-decoration: none; color: red; font-size: 24px;">
+                {{contact.email }}
+            </a>
+        </div>
+        <br><br>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin: auto; text-align: center;">
+            <p class="text-uppercase" style="font-size: 24px !important;">
+                Téléphone du contact :
+            </p>
+            <br>
+            <a href="tel:{{ contact.telephone }}" style="text-decoration: none; color: red; font-size: 24px">
+                {{contact.telephone }}
+            </a>
+        </div>
+        <br><br>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-3" style="margin: auto; text-align: center;">
+            <p class="text-uppercase" style="font-size: 24px !important;">
+                Objet du message : <br><br>{{contact.objet }}
+            </p>
+
+
+        </div>
+        <br><br>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin: auto; text-align: center;">
+            <p class="text-uppercase" style="font-size: 24px !important;">Contenue du message : <br><br>{{contact.message }}</p>
+        </div>
+
+        <br><br><br><br>
+
+    </div>
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>

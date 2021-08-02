@@ -4,9 +4,11 @@ namespace App\Entity;
 
 use App\Repository\SiteRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Entity(repositoryClass=SiteRepository::class)
+ * @UniqueEntity("nom")
  */
 class Site
 {
@@ -36,6 +38,11 @@ class Site
      * @ORM\Column(type="string", length=255)
      */
     private $code;
+
+    public function __toString()
+    {
+        return $this->getNom();
+    }
 
     public function getId(): ?int
     {

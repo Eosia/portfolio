@@ -1,0 +1,76 @@
+/*scss portfolio*/
+
+
+  .btn-site {
+
+      border: 3px solid #c4b280 !important;
+      color: #c4b280 !important;
+      background-color: #000 !important;
+      padding: 10px 5px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-family: $font1;
+      letter-spacing: 0.2rem;
+
+      &:hover {
+        border: 3px outset silver !important;
+        color: #000 !important;
+        background-color: #c4b280 !important;
+      }
+
+      &:after {
+        border: 5px solid #c4b280;
+        color: #c4b280 !important;
+        background-color: #000 !important;
+      }
+
+    }
+
+  .btn-code {
+    // Medium devices (tablets, 768px and up)
+    @media (max-width: 992px) {
+      margin-top: 3vh;
+    }
+  }
+
+  .card-portfolio {
+
+    font-family: $font3;
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1600px) {
+      font-size: 1.6rem !important;
+      letter-spacing: 0.2rem !important;
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+      font-size: 1.4rem !important;
+      letter-spacing: 0.1rem !important;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+      font-size: 1.2rem !important;
+      letter-spacing: 0.2rem !important;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+      font-size: 1.2rem !important;
+      letter-spacing: 0.1rem !important;
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+      font-size: 1.3rem !important;
+      letter-spacing: 0.1rem !important;
+    }
+
+    // Small devices (portrait phones, 300px and up)
+    @media (max-width: 575.98px) {
+      font-size: 1rem !important;
+      letter-spacing: 0.1rem !important;
+    }
+
+  }

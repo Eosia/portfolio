@@ -1,0 +1,29 @@
+/*scss contact*/
+
+  .btn-contact {
+      border: 5px solid #c4b280 !important;
+      color: #c4b280 !important;
+      background-color: #000 !important;
+      padding: 10px 30px !important;
+      border-radius: 10px !important;
+      font-weight: 700;
+      font-family: $font1;
+      letter-spacing: 0.4rem !important;
+
+      &:hover {
+        border: 5px outset #000 !important;
+        color: #000 !important;
+        background-color: #c4b280 !important;
+      }
+
+      &:after {
+        border: 5px solid #c4b280 !important;
+        color: #c4b280 !important;
+        background-color: #000 !important;
+      }
+    }
+
+  .form-control {
+    border: 1px solid #c4b280 !important;
+    box-shadow: 2px 2px 2px 2px #000 !important;
+  }

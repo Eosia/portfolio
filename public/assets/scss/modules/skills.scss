@@ -1,0 +1,46 @@
+/*scss skills*/
+
+.card-skill {
+
+  background-color: #000 !important;
+  padding: 15px 5px;
+  border: 3px outset #c4b280 !important;
+  margin-bottom: 5vh;
+
+  .progress-bar {
+    background-color: #c4b280;
+  }
+}
+
+.font-skills {
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    font-size: 1.4rem !important;
+    letter-spacing: 0.2rem !important;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    font-size: 1.2rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    font-size: 1rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    font-size: 1rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+
+  // Small devices (portrait phones, 300px and up)
+  @media (max-width: 575.98px) {
+    font-size: 0.8rem !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
